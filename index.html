@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+
+    <title>Kipas Angin BreezeX</title>
+
+    <link rel="icon" href="./assets/icon.png"/>
+    <meta name="description" content="Kami dengan bangga mempersembahkan Kipas Angin BreezeX, revolusi dalam dunia kenyamanan rumah Anda. Dirancang dengan teknologi canggih dan inovatif, Kipas Angin BreezeX membawa udara segar dan dingin ke setiap sudut ruangan Anda. Taklukkan panasnya hari dengan Kipas Angin BreezeX!">
+    <meta name="keywords" content="Kipas, Kipas Angin, BreezeX, Kipas Angin BreezeX, Kipas BreezeX">
+    <meta name="author" content="Adhitya Bagus Wicaksono">
+    <meta name="robots" content="noindex, nofollow"/>
 
     <style>
       @import "bulma/css/bulma.css";
@@ -13,13 +20,8 @@
       @import "./fontawesome/css/solid.css";
       @import "./aos/dist/aos.css";
     </style>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
     <nav
       data-aos="fade-down"
       class="navbar is-primary is-fixed-top"
@@ -28,7 +30,9 @@
     >
       <div class="navbar-brand">
         <div class="navbar-item">
-          <img src="./assets/logo-white.png" height="28" />
+          <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <img src="./assets/logo-white.png" height="28" />
+          </a>
         </div>
 
         <a
@@ -71,8 +75,9 @@
     </nav>
 
     <section
-      class="hero is-medium"
+      class="hero is-small"
       style="background-image: url('./assets/hero-background.png');"
+      id="beranda"
     >
       <div class="hero-body">
         <div class="columns is-desktop">
@@ -85,10 +90,10 @@
               <p class="subtitle is-5 has-text-light" style="line-height: 2;">
                 Selamat Datang di Web
               </p>
-              <h1 class="title is-1 has-text-light" style="line-height: 2;">
+              <h1 class="title is-1 has-text-light" style="line-height: 1.5;">
                 Kipas Angin <b><i>BreezeX</i></b>
               </h1>
-              <p class="subtitle is-4 is-underlined has-text-light" style="line-height: 2;">
+              <p class="subtitle is-4 is-underlined has-text-light" style="line-height: 1.5;">
                 <i>Kenyamanan Tanpa Batas</i>
               </p>
             </div>
@@ -99,9 +104,10 @@
             </div>
           </div>
         </div>
-        <div class="is-flex is-justify-content-center" style="margin-top: 48px;">
+        <div class="is-flex is-justify-content-center" style="margin-top: 36px;">
           <div
             data-aos="fade-down"
+            data-aos-offset="50"
             class="has-background-primary"
             style="width: fit-content; padding: 12px 18px;"
           >
@@ -350,7 +356,9 @@
       <div class="content container">
         <div class="columns is-desktop">
           <div data-aos="fade-right" class="column has-text-start">
-            <img src="./assets/logo-green.png" style="height: 100%; max-height: 48px;" />
+            <a onclick="window.scrollTo({top: 0,behavior: 'smooth',})">
+              <img src="./assets/logo-green.png" style="height: 100%; max-height: 48px;" />
+            </a>
           </div>
           <div data-aos="fade-left"  class="column">
             <div class="is-flex is-justify-content-end">
