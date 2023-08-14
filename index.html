@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      @import "bulma/css/bulma.css";
+      @import "./fontawesome/css/fontawesome.css";
+      @import "./fontawesome/css/brands.css";
+      @import "./fontawesome/css/solid.css";
+      @import "./aos/dist/aos.css";
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      data-aos="fade-down"
+      class="navbar is-primary is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <img src="./assets/logo-white.png" height="28" />
+        </div>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" onclick="scrollSmoothTo('tentang')">
+            <span>
+              Tentang <b><i>BreezeX</i></b>
+            </span>
+          </a>
+          <a class="navbar-item" onclick="scrollSmoothTo('kenapa')">
+            <span>
+              Kenapa <b><i>BreezeX</i></b>
+            </span>
+          </a>
+          <a class="navbar-item" onclick="scrollSmoothTo('produk')">
+            <span>
+              Produk <b><i>BreezeX</i></b>
+            </span>
+          </a>
+          <a class="navbar-item" onclick="scrollSmoothTo('pesan')">
+            <span>
+              Pesan <b><i>BreezeX</i></b>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="hero is-medium"
+      style="background-image: url('./assets/hero-background.png');"
+    >
+      <div class="hero-body">
+        <div class="columns is-desktop">
+          <div
+            data-aos="fade-right"
+            class="column is-flex is-align-items-center column has-text-left has-background-primary"
+            style="padding: 24px;"
+          >
+            <div class="is-flex is-flex-direction-column">
+              <p class="subtitle is-5 has-text-light" style="line-height: 2;">
+                Selamat Datang di Web
+              </p>
+              <h1 class="title is-1 has-text-light" style="line-height: 2;">
+                Kipas Angin <b><i>BreezeX</i></b>
+              </h1>
+              <p class="subtitle is-4 is-underlined has-text-light" style="line-height: 2;">
+                <i>Kenyamanan Tanpa Batas</i>
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-left" class="column is-flex is-align-content-center">
+            <div class="column has-text-right">
+              <img src="./assets/hero-image.png" alt="Kipas Angin BreezeX" />
+            </div>
+          </div>
+        </div>
+        <div class="is-flex is-justify-content-center" style="margin-top: 48px;">
+          <div
+            data-aos="fade-down"
+            class="has-background-primary"
+            style="width: fit-content; padding: 12px 18px;"
+          >
+            <p class="subtitle is-4 has-text-light">
+              <i class="fa-solid fa-arrow-down"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium" id="tentang">
+      <div class="hero-body">
+        <div data-aos="fade-up" class="has-background-primary" style="margin-bottom: 24px; border-radius: 6px;">
+          <h2
+            style="padding: 24px;"
+            class="title is-2 has-text-light has-text-centered"
+          >
+            Tentang
+            <span
+              ><b><i>BreezeX</i></b></span
+            >
+          </h2>
+        </div> 
+        <div class="columns is-desktop">
+          <div data-aos="fade-right" class="column is-flex is-justify-content-center is-align-content-center is-narrow">
+            <figure class="image" style="width: 100%; max-width: 350px;">
+              <img
+                class=""
+                src="./assets/tentang-section-image.png"
+                alt="Gambar Kipas Angin"
+              />
+            </figure>
+          </div>
+          <div data-aos="fade-left" class="column is-flex is-align-items-center" style="width: 100%; line-height: 1.75;">
+            <div class="is-flex is-flex-direction-column">
+              <p class="title is-4 has-text-primary" style="margin-bottom: 12px; line-height: 1.75;">
+                Kami dengan bangga mempersembahkan Kipas Angin <span><b><i>BreezeX</b></i></span>, revolusi dalam dunia kenyamanan rumah Anda.
+              </p>
+              <p class="title is-5 has-text-primary" style="margin-bottom: 12px; line-height: 1.75;">
+                Dirancang dengan teknologi canggih dan inovatif, Kipas Angin <span><b><i>BreezeX</b></i></span> membawa udara segar dan dingin ke setiap sudut ruangan Anda.
+              </p>
+              <p class="title is-5 has-text-primary" style="line-height: 1.75;">
+                Taklukkan panasnya hari dengan Kipas Angin <span><b><i>BreezeX</b></i></span>!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium is-primary" id="kenapa">
+      <div class="hero-body">
+        <div data-aos="fade-up" class="has-background-primary" style="margin-bottom: 24px; border: 2px solid #ffffff; border-radius: 6px;">
+          <h2
+            style="padding: 24px;"
+            class="title is-2 has-text-light has-text-centered"
+          >
+            Kenapa
+            <span
+              ><b><i>BreezeX</i></b></span
+            >
+          </h2>
+        </div>
+
+        <div class="columns is-desktop">
+          <div class="column is-flex is-align-items-stretch">
+            <div data-aos="fade-up" class="card">
+              <div class="card-content">
+                <div class="is-flex is-flex-direction-column has-text-centered" style="margin-bottom: 12px;">
+                  <h3 class="title is-1 has-text-primary"><i class="fa-solid fa-thumbs-up"></i></h3>
+                  <h3 class="title is-4 has-text-primary is-italic">Performa Optimal</h3>
+                </div>
+                <div class="has-text-primary has-text-justified" style="line-height: 1.75;">
+                  <p>Ditenagai oleh mesin kuat, Kipas Angin <span><b><i>BreezeX</i></b></span> memberikan aliran udara yang kuat dan merata, menciptakan lingkungan yang sejuk dalam hitungan detik.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-flex is-align-items-stretch">
+            <div data-aos="fade-up" class="card">
+              <div class="card-content">
+                <div class="is-flex is-flex-direction-column has-text-centered" style="margin-bottom: 12px;">
+                  <h3 class="title is-1 has-text-primary"><i class="fa-solid fa-sun"></i></h3>
+                  <h3 class="title is-4 has-text-primary is-italic">Desain Elegan</h3>
+                </div>
+                <div class="has-text-primary has-text-justified" style="line-height: 1.75;">
+                  <p>Dibuat dengan perpaduan sempurna antara keindahan dan fungsionalitas, Kipas Angin <span><b><i>BreezeX</i></b></span> adalah tambahan yang indah untuk setiap dekorasi rumah.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-flex is-align-items-stretch">
+            <div data-aos="fade-up" class="card">
+              <div class="card-content">
+                <div class="is-flex is-flex-direction-column has-text-centered" style="margin-bottom: 12px;">
+                  <h3 class="title is-1 has-text-primary"><i class="fa-solid fa-volume-xmark"></i></h3>
+                  <h3 class="title is-4 has-text-primary is-italic">Teknologi Hening</h3>
+                </div>
+                <div class="has-text-primary has-text-justified" style="line-height: 1.75;">
+                  <p>Nikmati kesejukan tanpa gangguan. Teknologi canggih kami menjaga operasi kipas tetap hening, sehingga Anda bisa tidur nyenyak atau berkonsentrasi tanpa gangguan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-flex is-align-items-stretch">
+            <div data-aos="fade-up" class="card">
+              <div class="card-content">
+                <div class="is-flex is-flex-direction-column has-text-centered" style="margin-bottom: 12px;">
+                  <h3 class="title is-1 has-text-primary"><i class="fa-solid fa-brain"></i></h3>
+                  <h3 class="title is-4 has-text-primary is-italic">Kontrol Pintar</h3>
+                </div>
+                <div class="has-text-primary has-text-justified" style="line-height: 1.75;">
+                  <p>Kendalikan Kipas Angin <span><b><i>BreezeX</i></b></span> dari mana saja dengan aplikasi smartphone kami. Sesuaikan kecepatan, mode, dan jadwal pengoperasian sesuai keinginan Anda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="hero is-medium" id="produk">
+      <div class="hero-body">
+        <div data-aos="fade-up" class="has-background-primary" style="margin-bottom: 24px; border-radius: 6px;">
+          <h2
+            style="padding: 24px;"
+            class="title is-2 has-text-light has-text-centered"
+          >
+            Produk
+            <span
+              ><b><i>BreezeX</i></b></span
+            >
+          </h2>
+        </div> 
+        <div class="rows">
+          <div data-aos="fade-right" class="columns">
+            <div class="column is-flex is-justify-content-center is-align-content-center is-narrow">
+              <figure class="image" style="width: 100%; max-width: 300px;">
+                <img
+                  class=""
+                  src="./assets/kipas-putih.png"
+                  alt="Gambar Kipas Angin"
+                />
+              </figure>
+            </div>
+            <div class="column is-flex is-align-items-center" style="width: 100%; line-height: 1.75;">
+              <div class="is-flex is-flex-direction-column">
+                <h3 class="title is-3 has-text-primary" style="margin-bottom: 24px; line-height: 1.75;">
+                  <b><i>BreezeX Classic - Putih Mewah</i></b>
+                </h3>
+                <p class="subtitle is-5 has-text-primary" style="margin-bottom: 12px; line-height: 1.75;">
+                  Kipas Angin <span><b><i>BreezeX</i></b></span> Classic hadir dengan desain minimalis dan elegan yang cocok untuk segala jenis ruangan. Dengan 3 mode kecepatan, Anda bisa menyesuaikan aliran udara sesuai dengan preferensi Anda.
+                </p>
+                <p class="has-text-primary">
+                  <i>Spesifikasi:</i>
+                  <li class="has-text-primary">
+                    <b>Dimensi</b>: 40 cm x 20 cm x 75cm
+                  </li>
+                  <li class="has-text-primary">
+                    <b>Kecepatan</b>: 4 mode
+                  </li>
+                  <li class="has-text-primary">
+                    <b>Warna</b>: Putih Mewah
+                  </li>
+                  <li class="has-text-primary">
+                    <b>Aplikasi Kontrol</b>: Ya
+                  </li>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" class="columns">
+            <div class="column is-flex is-justify-content-center is-align-content-center is-narrow">
+              <figure class="image" style="width: 100%; max-width: 300px;">
+                <img
+                  class=""
+                  src="./assets/kipas-hitam.png"
+                  alt="Gambar Kipas Angin"
+                />
+              </figure>
+            </div>
+            <div class="column is-flex is-align-items-center" style="width: 100%; line-height: 1.75;">
+              <div class="is-flex is-flex-direction-column">
+                <h3 class="title is-3 has-text-primary" style="margin-bottom: 24px; line-height: 1.75;">
+                  <b><i>BreezeX Pro - Teknologi Hening Mutakhir</i></b>
+                </h3>
+                <p class="subtitle is-5 has-text-primary" style="margin-bottom: 12px; line-height: 1.75;">
+                  Kipas Angin <span><b><i>BreezeX</i></b></span> Pro menghadirkan teknologi hening mutakhir, membuatnya sempurna untuk tidur malam yang nyaman. Nikmati kekuatan aliran udara tanpa mengorbankan ketenangan.
+                </p>
+                <p class="has-text-primary">
+                  <i>Spesifikasi:</i>
+                  <li class="has-text-primary">
+                    <b>Dimensi</b>: 40 cm x 20 cm x 75cm
+                  </li>
+                  <li class="has-text-primary">
+                    <b>Kecepatan</b>: 5 mode
+                  </li>
+                  <li class="has-text-primary">
+                    <b>Warna</b>: Hitam Modern
+                  </li>
+                  <li class="has-text-primary">
+                    <b>Aplikasi Kontrol</b>: Ya
+                  </li>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="hero is-medium is-primary" id="pesan">
+      <div class="hero-body">
+        <div data-aos="fade-up" class="has-background-primary" style="margin-bottom: 24px; border: 2px solid #ffffff; border-radius: 6px;">
+          <h2
+            style="padding: 24px;"
+            class="title is-2 has-text-light has-text-centered"
+          >
+            Pesan
+            <span
+              ><b><i>BreezeX</i></b></span
+            >
+          </h2>
+        </div>
+
+        <div class="is-flex is-align-content-center is-align-items-center is-flex-direction-column">
+          <h3 data-aos="fade-left" class="title is-3 has-text-centered" style="margin-bottom: 24px; line-height: 1.75;">Siap untuk merasakan kesejukan tak tertandingi?</h3>
+          <p data-aos="fade-right" class="subtitle is-5 has-text-centered" style="line-height: 1.75;">Pilihlah Kipas Angin <span><b><i>BreezeX</i></b></span> yang sesuai dengan gaya hidup Anda dan nikmati udara segar dalam hitungan hari.</p>
+          <button data-aos="fade-down" class="button is-medium has-text-centered has-text-primary">
+            <span class="icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <span>Pesan <b><i>BreezeX</i></b></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content container">
+        <div class="columns is-desktop">
+          <div data-aos="fade-right" class="column has-text-start">
+            <img src="./assets/logo-green.png" style="height: 100%; max-height: 48px;" />
+          </div>
+          <div data-aos="fade-left"  class="column">
+            <div class="is-flex is-justify-content-end">
+              <a class="subtitle is-5 has-text-primary" onclick="scrollSmoothTo('tentang')" style="line-height: 2.5;">
+                <span>
+                  Tentang <b><i>BreezeX</i></b>
+                </span>
+              </a>
+            </div>
+            <div class="is-flex is-justify-content-end">
+              <a class="subtitle is-5 has-text-primary" onclick="scrollSmoothTo('kenapa')" style="line-height: 2.5;">
+                <span>
+                  Kenapa <b><i>BreezeX</i></b>
+                </span>
+              </a>
+            </div>
+            <div class="is-flex is-justify-content-end">
+              <a class="subtitle is-5 has-text-primary" onclick="scrollSmoothTo('produk')" style="line-height: 2.5;">
+                <span>
+                  Produk <b><i>BreezeX</i></b>
+                </span>
+              </a>
+            </div>
+            <div class="is-flex is-justify-content-end">
+              <a class="subtitle is-5 has-text-primary" onclick="scrollSmoothTo('pesan')" style="line-height: 2.5;">
+                <span>
+                  Pesan <b><i>BreezeX</i></b>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="columns is-desktop">
+          <div class="column">
+            <a class="subtitle is-6 has-text-primary">
+              <i class="fa-solid fa-globe"></i> kipasanginbreezex.co.id
+            </a>
+          </div>
+          <div class="column">
+            <a class="subtitle is-6 has-text-primary">
+              <i class="fa-brands fa-facebook"></i> Kipas Angin BreezeX
+            </a>
+          </div>
+          <div class="column">
+            <a class="subtitle is-6 has-text-primary">
+              <i class="fa-brands fa-twitter"></i> @kipasanginbreezex
+            </a>
+          </div>
+          <div class="column">
+            <a class="subtitle is-6 has-text-primary">
+              <i class="fa-brands fa-instagram"></i> @kipasanginbreezex
+            </a>
+          </div>
+        </div>
+        <hr data-aos="fade-down" />
+        <div data-aos="fade-down" class="has-text-centered" style="margin-top: 32px;">
+          <p class="subtitle is-6 has-text-primary">
+            Hak Cipta <script>document.write(new Date().getFullYear())</script> oleh Kipas Angin Breeze
+          </p>
+          <p class="subtitle is-6 has-text-primary">
+            Hak Cipta Terlindungi
+          </p>          
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+    <script src="./aos/dist/aos.js"></script>
+  </body>
+</html>
